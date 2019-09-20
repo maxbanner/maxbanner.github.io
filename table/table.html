@@ -2,7 +2,13 @@
 <html>
 <head>
 <title>Create an HTML Table</title>
-
+<style>
+table, th, td{
+border: 1px solid black;
+border-collapse: collapse;
+padding: 6px
+}
+</style>
 </head>
 <body>
 <table>
@@ -49,6 +55,44 @@
     <td>420*3</td>
 </tr>
 </table>
+<table>
+<thead>
+    <tr>
+    <td>Month</td>
+    <td>Apples Bought</td>
+    <td>Cost</td>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+    <td>January</td>
+    <td>1</td>
+    <td>10$</td>
+    </tr>
+</tbody>
+<tbody>
+    <tr>
+    <td>March</td>
+    <td>10</td>
+    <td>100$</td>
+    </tr>
+</tbody>
+<tbody>
+    <tr>
+    <td>September</td>
+    <td>72</td>
+    <td>720$</td>
+    </tr>
+</tbody>
+<tfoot>
+    <tr>
+    <td>Sum:</td>
+    <td>83</td>
+    <td>830$</td>
+    </tr>
+</tfoot>
+
+
 
 </body>
 </html>
