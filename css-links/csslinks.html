@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Links</title>
+<style>
+#one:link{
+    color:green;
+}
+#one:visited{
+    text-decoration:none;
+}
+#one:hover{
+    background-color:pink;
+    color: lightblue;
+}
+#one:active{
+    color:white;
+}
+#two:link, #two:visited{
+  background-color: orange;
+  color: blue;
+  border: 6px solid purple;
+  padding: 20px 40px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+}
+#two:hover, #two:active {
+  background-color: blue;
+  color: white;
+  cursor:crosshair;
+}
+#three:link{
+    background-color:black;
+    color:white;
+}
+#three:visited{
+    font-size:.5em;
+}
+#three:hover{
+    font-size:12em;
+    cursor:progress;
+}
+#three:active{
+    font-weight:bold;
+}
+#four:link{
+    font:italic 10px "Times New Roman", serif
+}
+#four:visited{
+    color:red;
+}
+#four:hover{
+    font:bold 40px "Comic Sans MS", sans-serif;
+    cursor:help;
+}
+#four:active{
+    font-family: "Comic Sans MS", serif;
+}
+#five:link{
+    text-decoration:none;
+}
+#five:visited{
+    color:"ffcc00";
+    background-color:"66ff66";
+}
+#five:hover{
+    cursor:wait;
+    text-decoration:underline;
+}
+#five:active{
+    font-size:500px;
+    font-family:"Comic Sans Ms";
+    color:red;
+    background-color:pink;
+    font-weight:bold;
+}
+</style>
+</head>
+<body>
+<p>
+<a id="one" href="https://maxbanner.github.io/games/game1.html">Game1</a>
+</p>
+<p>
+<a id="five" href="https://maxbanner.github.io/games/game2.html">Game2</a>
+</p>
+<p>
+<a id="three" href="https://maxbanner.github.io/games/game3.html">Game3</a>
+</p>
+<p>
+<a id="four" href="https://maxbanner.github.io/games/game4.html">Game4</a>
+</p>
+<p>
+<a id="two" href="https://maxbanner.github.io/css-font/cssfont.html">CSS Fonts</a>
+</p>
+</body>
+</html>
