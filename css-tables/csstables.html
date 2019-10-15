@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Tables</title>
+<style>
+table{
+    width:50%;
+}
+tfoot{
+    background-color:beige;
+}
+th, td{
+    height:40px;
+}
+caption{
+    background-color:orange;
+}
+thead{
+    text-align:center;
+    background-color:lightblue
+}
+td{
+    text-align:right;
+    padding: 10px
+}
+tbody{
+    background-color:cyan;
+}
+table, th, td {
+    border-collapse: collapse;
+    border: 5px solid purple;
+}
+</style>
+</head>
+<body>
+<table>
+<caption>apple</caption>
+    <thead>
+        <th>apples</th>
+        <th>bananas</th>
+        <th>green</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>5</td>
+            <td>7</td>
+            <td>9</td>
+        </tr>
+    </tfoot>
+</body>
+</html>
