@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Box Model</title>
+<style>
+#one{
+    width: 200px;
+    border-style:ridge;
+    border-width:5px;
+    padding: 20px;
+    margin: 25px;
+    outline-style:double;
+    outline-color:blue;
+    border:5px dotted black
+}
+#two{
+    width: 150px;
+    border-width:10px;
+    border-top-style:dotted;
+    border-bottom-style:dotted;
+    border-left-style:solid;
+    border-right-style:solid;
+    padding: 30px 100px;
+    margin: 100px 30px;
+    outline: 10px dashed green
+}
+#three{
+    width:500px;
+    border-top-style: double;
+    border-bottom-style: dashed;
+    border-right-style: dotted;
+    border-left-style: solid;
+    border-width: 40px;
+    padding: 10px 20px 30px 40px;
+    margin: 40px 30px 20px 10px;
+    outline: 30px outset teal
+}
+</style>
+</head>
+<body>
+<div id="one">
+<p>
+content width: 200px<br>
+top margin: 25px<br>
+right margin: 25px<br>
+bottom margin: 25px<br>
+left margin: 25px<br>
+top border: 5px<br>
+right border: 5px<br>
+bottom border: 5px<br>
+left border: 5px<br>
+top padding: 20px<br>
+right padding: 20px<br>
+bottom padding: 20px<br>
+left padding: 20px<br>
+outline thickness: 5px<br>
+TOTAL BOX WIDTH: 310px
+</p>
+</div>
+<div id="two">
+<p>
+content width: 150px<br>
+top margin: 100px<br>
+right margin: 30px<br>
+bottom margin: 100px<br>
+left margin: 30px<br>
+top border: 10px<br>
+right border: 10px<br>
+bottom border: 10px<br>
+left border: 10px<br>
+top padding: 30px<br>
+right padding: 100px<br>
+bottom padding: 30px<br>
+left padding: 100px<br>
+outline thickness: 10px<br>
+TOTAL BOX WIDTH: 430px
+</p>
+</div>
+<div id="three">
+<p>
+content width: 500px<br>
+top margin: 40px<br>
+right margin: 30px<br>
+bottom margin: 20px<br>
+left margin: 10px<br>
+top border: 40px<br>
+right border: 40px<br>
+bottom border: 40px<br>
+left border: 40px<br>
+top padding: 10px<br>
+right padding: 20px<br>
+bottom padding: 30px<br>
+left padding: 40px<br>
+outline thickness: 30px<br>
+TOTAL BOX WIDTH: 700px
+</p>
+</div>
+</body>
+</html>
