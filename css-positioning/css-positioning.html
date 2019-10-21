@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Positioning</title>
+<style>
+div{
+    cursor:url(cursor.cur.cur),auto;
+}
+#one{
+    position: fixed;
+    top: 200px;
+    right: 0px;
+    width:200px;
+    border: 3px solid #5729CD;
+    cursor:no-drop;
+}
+#two{
+    position:relative;
+    left: 300px;
+    border: 5px dotted #36BA34;
+    cursor:no-drop;
+}
+#three{
+    position: absolute;
+    top: 150px;
+    right: 200px;
+    border: 1px dashed #696969;
+    cursor:no-drop;
+}
+#ab{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+    cursor:no-drop;
+}
+#bc{
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    z-index: 0;
+    cursor:no-drop;
+}
+#cd{
+    position:fixed;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    cursor:no-drop;
+}
+</style>
+</head>
+<body>
+<img id="one" src="eric200x200.png">
+<img id="two" src="eric200x200.png">
+<img id="three" src="eric200x200.png">
+<img id="ab" src="ethan.jpg">
+<img id="bc" src="ethan.jpg">
+<img id="cd" src="ethan.jpg">
+</body>
+</html>
