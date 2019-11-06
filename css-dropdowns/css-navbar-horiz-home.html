@@ -15,16 +15,42 @@ li {
   float: left;
 }
 
-li a {
-  display: block;
+li a, dropbtn {
+  display: inline-block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-li a:hover {
-  background-color: #19FE9B;
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 .active {
   background-color: #D15129;
@@ -34,7 +60,14 @@ li a:hover {
 <body>
 <ul>
   <li><a class="active" href="css-navbar-horiz-home.html">Home</a></li>
-  <li><a href="css-navbar-horiz-news.html">News</a></li>
+  <li class="dropdown">
+  <a class="dropbtn" href="css-navbar-horiz-news.html">News</a>
+  <div class="dropdown-content">
+      <a href="dropnews.html">Argentina is gone!</a>
+      <a href="dropnews1.html">Obama</a>
+      <a href="dropnews2.html">Ok Boomer is new slur word</a>
+    </div>
+  </li>
   <li><a href="css-navbar-horiz-contacts.html">Contact</a></li>
   <li><a href="css-navbar-horiz-about.html">About</a></li>
 </ul>
