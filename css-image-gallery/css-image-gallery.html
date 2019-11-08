@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Image Gallery</title>
+<style>
+body{
+background-color:#CE83C4;
+color:#4912C1;
+font-family:"Comic Sans MS"
+}
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+<h2>Responsive Image Gallery</h2>
+<h4>Cursed_Cups</h4>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="cup1.jpg">
+      <img src="cup1.jpg" alt="Holding a cup with hand in the juice" width="224" height="224">
+    </a>
+    <div class="desc">If anyone served my OJ like this I would slap them.</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="cup2.jpg">
+      <img src="cup2.jpg" alt="McDOnalds cup with Ketchup" width="224" height="224">
+    </a>
+    <div class="desc">What a waste of Ketchup!</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="cup3.jpg">
+      <img src="cup3.jpg" alt="Glass of OJ but the hand holding it is upside down" width="224" height="244">
+    </a>
+    <div class="desc">Australian Man holding OJ. (Get it? It's because his hand is upside down)</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="cup4.jpg">
+      <img src="cup4.jpg" alt="Hand is through the gas station foam cup" width="224" height="224">
+    </a>
+    <div class="desc">Now thats just leaking, it better be sprite.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="cup5.jpg">
+      <img src="cup5.jpg" alt="Starbucks but the cup is the cupholder instead of the cup" width="224" height="224">
+    </a>
+    <div class="desc">What else are you gonna do when starbucks removes all plastic from their products?</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="cup6.jpg">
+      <img src="cup6.jpg" alt="Mothman cup" width="224" height="224">
+    </a>
+    <div class="desc">Mothman!</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="cup7.jpg">
+      <img src="cup7.jpg" alt="Ketchup in McDonalds cup but with fries" width="224" height="224">
+    </a>
+    <div class="desc">Atleast they found a use for all that ketchup.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="cup8.jpg">
+      <img src="cup8.jpg" alt="Spider in coffe cup" width="224" height="224">
+    </a>
+    <div class="desc">This is why I don't drink coffee</div>
+  </div>
+</div>
+</body>
+</html>
