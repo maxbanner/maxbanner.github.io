@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Image Sprites</title>
+<style>
+#navlist {
+  position: relative;
+}
+
+#navlist li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+}
+
+#navlist li, #navlist a {
+  height: 44px;
+  display: block;
+}
+
+#home {
+  left: 0px;
+  width: 50px;
+  background: url('sprite.png') 0 0;
+}
+
+#prev {
+  left: 50px;
+  width: 50px;
+  background: url('sprite.png') -51px 0;
+}
+
+#next {
+  left: 100px;
+  width: 50px;
+  background: url('sprite.png') -102px 0;
+}
+
+#four {
+  left: 150px;
+  width: 50px;
+  background: url('sprite.png') -153px 0;
+}
+
+#home a:hover {
+  background: url('sprite.png') 0 -51px;
+}
+
+#prev a:hover {
+  background: url('sprite.png') -51px -51px;
+}
+
+#next a:hover {
+  background: url('sprite.png') -102px -51px;
+}
+
+#four a:hover {
+  background: url('sprite.png') -153px -51px;
+}
+</style>
+</head>
+<body>
+<ul id="navlist">
+  <li id="home"><a href="https://en.wikipedia.org/wiki/Thomas_Ferguson_%26_Co_Ltd"></a></li>
+  <li id="prev"><a href="https://en.wikipedia.org/wiki/Aechmea_floribunda"></a></li>
+  <li id="next"><a href="https://en.wikipedia.org/wiki/St._Joseph%27s_School_(North_Adams,_Massachusetts)"></a></li>
+  <li id="four"><a href="https://en.wikipedia.org/wiki/The_Duck_Factory"></a></li>
+</ul>
+</body>
+</html>
