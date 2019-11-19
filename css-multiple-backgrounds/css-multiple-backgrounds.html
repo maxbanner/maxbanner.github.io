@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Multiple Backgrounds</title>
+<style>
+#one{
+    height:500px;
+    width:500px;
+    background-image:url(hat2.png), url(branden.jpg), url(tiles.jpg);
+    background-size: 181px 117px, 300px 300px, auto;
+    background-position: 255px 180px, right bottom, top left;
+    background-repeat: no-repeat, no-repeat, repeat;
+}
+#two{
+    height:500px;
+    width:500px;
+    background: url(hat2.png)255px 180px/181px 117px no-repeat, url(branden.jpg) right bottom/300px 300px no-repeat, url(tiles.jpg) top left/auto repeat;   
+}
+html { 
+  background: url(keegan.jpg) no-repeat center fixed; 
+  background-size: cover;
+}
+
+#hero-image {
+  background: url(me.jpg) no-repeat center; 
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+#hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+</style>
+</head>
+<body>
+<div id=hero-image>
+<div id=hero-text>
+<h1>Max Banner</h1>
+</div>
+</div>
+
+<div id=one>
+</div>
+<div id=two>
+</div>
+</body>
+</html>
