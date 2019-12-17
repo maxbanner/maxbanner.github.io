@@ -1,0 +1,84 @@
+/* StyleSheet */
+body{
+    color:black;
+    font-family:'Open Sans', serif;
+}
+h1{
+    font-family: 'Lakki Reddy', cursive;
+    color: black;
+}
+/*nav bar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  height:14px;
+  background-color: #cccdc6;
+}
+li {
+  display: inline;
+  color:#cccdc6;
+  padding: 8px 14px;
+  text-decoration: none;
+  text-align:center
+}
+li a {
+  display: inline;
+  color: black;
+  padding: 10px 14px;
+  text-align: center;
+  text-decoration: none;
+}
+.active {
+  background-color: #41a1d1;
+  color: white;
+}
+li a:hover{
+    background-color:#555;
+    color: white;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.indexcolumn{
+    float: left;
+    width:100%
+}
+.column{
+    float:left;
+    width:48%;
+    padding:1%;
+}
+h1{
+    text-align:center;
+}
+h2{
+    text-align:center;
+}
+.row:after{
+    content:"";
+    display: table;
+    clear:both;
+}
+@media screen and (max-width:600px){
+    .column{
+        width:100%
+    }
+}
+#list{
+    color:black;
+    display: block;
+    padding:10px;
+}
+figure{
+    width: 100%;
+}
+img{
+    width: 100%;
+}
